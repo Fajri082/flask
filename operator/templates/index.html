@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title> Contoh template kedua </title>
+	</head>
+	<body>
+		<h2> contoh template kedua </h2>
+		<p>
+			a = {{ a }}<br />
+			b = {{ b }}<br />
+			a + b = {{ a+b }}<br />
+			<br />
+			c = {{ c }}
+			{% if a == c %}
+				<p> Nilai A sama dengan C</p>
+			{% endif %}
+			<br />
+			{% if a == 20 and b == 30 %}
+				<p> Anda Benar </p>
+			{% endif %}
+		</p>
+	</body>
+</html>

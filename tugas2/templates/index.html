@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> tugas kedua</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}" type="text/css">
+	</head>
+	<body>
+		<img src="{{ url_for('static', filename='fancybg.jpg')}}" />
+		
+	
+		<nav>
+				<ul>
+                	<li><a href="/">Home</a></li>
+                	<li><a href="/perhitungan">tugas pertama</a></li>
+            	</ul>
+        </nav>
+        <p>
+            <button onclick="update1()"> test </button>
+            <p id="p1"></p>
+             <script src="{{ url_for('static', filename='function.js')}}"></script>
+         </p>
+         
+		<h2> perulangan </h2>
+		{# menampilkan setiap elemen di dalam list #}
+		<ul>
+			{% for elemen in navigasi %}
+			<li><a href=" {{ elemen[0] }}">{{ elemen[1] }}</li>
+			{% endfor %}
+		</ul>
+
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Contoh Form</title>
+</head>
+<body>
+    <h2>Contoh Form</h2>
+    <p>
+        Hello {{ nama }}, jalan-jalan dulu saja,
+        umurmu masih {{ umur }} tahun. <br />
+        Sssstt... Kata sandimu adalah {{ password }}.<br />
+        Kamu adalah seorang
+        {% if jeniskelamin=='P' %}
+           Pria.
+        {% else %}
+           Wanita.
+        {% endif %}
+        <br />
+        Sekarang kamu tinggal di {{ alamat }}<br />
+        Hobi kamu adalah
+        {% for hobby in hobbies %}
+             {{ hobby ~ ' ' }},
+        {% endfor %}
+        <br />
+        Agamamu adalah {{ agama ~ ' '}}<br />
+        Sssstt... Kodemu adalah {{ kode }}
+    </p>
+</body>
+</html>

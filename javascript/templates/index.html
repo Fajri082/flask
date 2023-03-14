@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> contoh template dengan JavaScript</title>
+	<script src="{{ url_for('static', filename='functions.js') }} "type="text/javascript"></script>
+</head>
+<body>
+	<h2>contoh template dengan JavaScript</h2>
+	<p> contoh penggunaan JavaScript pada template.</p>
+
+	2 * 3 =
+	<script language="JavaScript">
+		var result = kali(2,3);
+		document.write(result);
+	</script> <br />
+
+	2 ^ 3 =
+	<script language="JavaScript">
+		var result = pangkat(2,3);
+		document.write(result);
+	</script> <br />
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}" type="text/css">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/javascript">Blog</a></li>
+            </ul>
+        </ul>
+    </nav>
+    <h2>Operator</h2><p>
+
+        <p>
+            x = {{ x }} <br />
+            y = {{ y }} <br />
+            z = {{ x*y }} <br />
+        </p>
+
+    <h2>Percabangan</h2><p>
+            Nilai z = {{ z }} <br />
+
+            {% if z < 0 %}
+                {{ z }} adalah bilangan negatif.
+            {% elif z == 0 %}
+                {{ z }} adalah sama dengan nol.
+            {% else %}
+                {{ z }} adalah bilangan positif.
+            {% endif %}
+        </p>
+    
+    <script src="{{ url_for('static', filename='fitur.js')}}"></script>
+</body>
+</html>

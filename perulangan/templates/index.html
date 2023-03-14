@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> contoh template kelima</title>
+	</head>
+	<body>
+		<h2> contoh template kelima </h2>
+		{# menampilkan setiap elemen di dalam list #}
+		<ul>
+			{% for elemen in navigasi %}
+			<li><a href=" {{ elemen[0] }}">{{ elemen[1] }}</li>
+			{% endfor %}
+		</ul>
+	</body>
+</html>

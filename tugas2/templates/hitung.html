@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>tugas pertama </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}" type="text/css">
+	</head>
+	<body>
+		<nav>
+				<ul>
+                	<li><a href="/">Home</a></li>
+                	<li><a href="/perhitungan">tugas pertama</a></li>
+            	</ul>
+        </nav>
+        
+		<h2>operator</h2>
+		<p>
+			s = {{ s }}<br />
+			t = {{ t }}<br />
+			u = {{ u }}<br />
+			<br />
+		</p>
+	
+	<p>
+		<h2> percabangan</h2>
+		{# menampilkan variabel u #}
+		nilai u = {{ u }}<br />
+
+		{# memeriksa nilai w #}
+		{% if u < 0 %}
+		 	{{ u }} adalah bilangan negatif.
+		{% elif u == 0 %}
+		 	{{ u }} adalah sama dengan nol
+		{% else %}
+		 	{{ u }} adalah bilagan positif
+		{% endif %}
+	</p>
+	<h2>variabel</h2>
+	<p>
+		cerita1 = {{ cerita1 }} <br />
+		cerita2 = {{ cerita2 }} <br />
+	</p>
+
+</body>
+</html>

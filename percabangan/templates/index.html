@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contoh template keempat</title>
+</head>
+<body>
+	<h2> contoh template keempat</h2>
+	{# menampilkan variabel a #}
+	nilai a = {{ a }}<br />
+
+	{# memeriksa nilai a #}
+	{% if a < 0 %}
+		 {{ a }} adalah bilangan negatif.
+	{% elif a == 0 %}
+		 {{ a }} adalah sama dengan nol
+	{% else %}
+		 {{ a }} adalah bilagan positif
+	{% endif%}
+</body>
+</html>
